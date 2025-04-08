@@ -1,7 +1,8 @@
 -- How many teams played in the league in each year?
 
 -- Expected result: 150 rows, ending with
---
+SELECT YEAR, COUNT(NAME) FROM TEAMS
+group by  year;
 -- | 2011 | 30       |
 -- | 2012 | 30       |
 -- | 2013 | 30       |
